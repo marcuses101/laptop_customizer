@@ -8,7 +8,6 @@ import "./App.css";
 import Cart from "./Cart";
 import Customize from "./Customize";
 
-
 class App extends Component {
   state = {
     selected: {
@@ -32,7 +31,7 @@ class App extends Component {
   };
 
   updateFeature = (feature, newValue) => {
-    const selected = Object.assign({}, this.state.selected);
+    const selected = { ...this.state.selected };
     selected[feature] = newValue;
     this.setState({
       selected,
@@ -77,38 +76,21 @@ class App extends Component {
       );
     });
 
-    const summary = Object.keys(this.state.selected).map((feature, idx) => {
-      const featureHash = feature + "-" + idx;
-      const selectedOption = this.state.selected[feature];
-
-      return (
-        <div className="summary__option" key={featureHash}>
-          <div className="summary__option__label">{feature} </div>
-          <div className="summary__option__value">{selectedOption.name}</div>
-          <div className="summary__option__cost">
-            {this.formatCurrency(selectedOption.cost)}
-          </div>
-        </div>
-      );
-    });
-
-    const total = Object.keys(this.state.selected).reduce(
-      (acc, curr) => acc + this.state.selected[curr].cost,
-      0
-    );
-
     return (
       <div className="App">
         <header>
           <h1>ELF Computing | Laptops</h1>
         </header>
         <main>
-          <form className="main__form">
-            <h2>Customize your laptop</h2>
-            {features}
-          </form>
-          <Cart formatCurrency={this.formatCurrency} selected={this.state.selected}/>
-
+          <Customize
+            features={this.props.features}
+            selected={this.state.selected}
+            update={this.updateFeature}
+          />
+          <Cart
+            formatCurrency={this.formatCurrency}
+            selected={this.state.selected}
+          />
         </main>
       </div>
     );

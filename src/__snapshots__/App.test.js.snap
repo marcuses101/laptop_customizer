@@ -293,3 +293,668 @@ exports[`laptop-customizer matches original snapshot 1`] = `
   </main>
 </div>
 `;
+
+exports[`laptop-customizer updates cart when new components are selected 1`] = `
+<App
+  features={
+    Object {
+      "Display": Array [
+        Object {
+          "cost": 1500,
+          "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+        },
+        Object {
+          "cost": 1400,
+          "name": "15.3\\" HGTV (3840 x 2160) Home makeover edition",
+        },
+      ],
+      "Operating System": Array [
+        Object {
+          "cost": 200,
+          "name": "Ubuntu Linux 16.04",
+        },
+        Object {
+          "cost": 300,
+          "name": "Bodhi Linux",
+        },
+      ],
+      "Processor": Array [
+        Object {
+          "cost": 700,
+          "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+        },
+        Object {
+          "cost": 1200,
+          "name": "Professor X AMD Fire Breather with sidewinder technology",
+        },
+      ],
+      "Video Card": Array [
+        Object {
+          "cost": 1150.98,
+          "name": "Toyota Corolla 1.5v",
+        },
+        Object {
+          "cost": 1345,
+          "name": "Mind mild breeze 2000",
+        },
+      ],
+    }
+  }
+>
+  <div
+    className="App"
+  >
+    <header>
+      <h1>
+        ELF Computing | Laptops
+      </h1>
+    </header>
+    <main>
+      <Customize
+        features={
+          Object {
+            "Display": Array [
+              Object {
+                "cost": 1500,
+                "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+              },
+              Object {
+                "cost": 1400,
+                "name": "15.3\\" HGTV (3840 x 2160) Home makeover edition",
+              },
+            ],
+            "Operating System": Array [
+              Object {
+                "cost": 200,
+                "name": "Ubuntu Linux 16.04",
+              },
+              Object {
+                "cost": 300,
+                "name": "Bodhi Linux",
+              },
+            ],
+            "Processor": Array [
+              Object {
+                "cost": 700,
+                "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+              },
+              Object {
+                "cost": 1200,
+                "name": "Professor X AMD Fire Breather with sidewinder technology",
+              },
+            ],
+            "Video Card": Array [
+              Object {
+                "cost": 1150.98,
+                "name": "Toyota Corolla 1.5v",
+              },
+              Object {
+                "cost": 1345,
+                "name": "Mind mild breeze 2000",
+              },
+            ],
+          }
+        }
+        selected={
+          Object {
+            "Display": Object {
+              "cost": 1500,
+              "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+            },
+            "Operating System": Object {
+              "cost": 300,
+              "name": "Bodhi Linux",
+            },
+            "Processor": Object {
+              "cost": 1200,
+              "name": "Professor X AMD Fire Breather with sidewinder technology",
+            },
+            "Video Card": Object {
+              "cost": 1345,
+              "name": "Mind mild breeze 2000",
+            },
+          }
+        }
+        update={[Function]}
+      >
+        <form
+          className="main__form"
+        >
+          <h2>
+            Customize your laptop
+          </h2>
+          <Component
+            key="Processor-0"
+            name="Processor"
+            options={
+              Array [
+                Object {
+                  "cost": 700,
+                  "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+                },
+                Object {
+                  "cost": 1200,
+                  "name": "Professor X AMD Fire Breather with sidewinder technology",
+                },
+              ]
+            }
+            selected={
+              Object {
+                "Display": Object {
+                  "cost": 1500,
+                  "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+                },
+                "Operating System": Object {
+                  "cost": 300,
+                  "name": "Bodhi Linux",
+                },
+                "Processor": Object {
+                  "cost": 1200,
+                  "name": "Professor X AMD Fire Breather with sidewinder technology",
+                },
+                "Video Card": Object {
+                  "cost": 1345,
+                  "name": "Mind mild breeze 2000",
+                },
+              }
+            }
+            update={[Function]}
+          >
+            <fieldset
+              className="feature"
+            >
+              <legend
+                className="feature__name"
+              >
+                <h3>
+                  Processor
+                </h3>
+              </legend>
+              <div
+                className="feature__item"
+                key="\\"name\\":\\"17th-Generation-Intel-Core-HB-(7-Core-with-donut-spare)\\"\\"cost\\":700"
+              >
+                <input
+                  checked={false}
+                  className="feature__option"
+                  id="\\"name\\":\\"17th-Generation-Intel-Core-HB-(7-Core-with-donut-spare)\\"\\"cost\\":700"
+                  name="Processor"
+                  onChange={[Function]}
+                  type="radio"
+                />
+                <label
+                  className="feature__label"
+                  htmlFor="\\"name\\":\\"17th-Generation-Intel-Core-HB-(7-Core-with-donut-spare)\\"\\"cost\\":700"
+                >
+                  17th Generation Intel Core HB (7 Core with donut spare)
+                   (
+                  $700.00
+                  )
+                </label>
+              </div>
+              <div
+                className="feature__item"
+                key="\\"name\\":\\"Professor-X-AMD-Fire-Breather-with-sidewinder-technology\\"\\"cost\\":1200"
+              >
+                <input
+                  checked={true}
+                  className="feature__option"
+                  id="\\"name\\":\\"Professor-X-AMD-Fire-Breather-with-sidewinder-technology\\"\\"cost\\":1200"
+                  name="Processor"
+                  onChange={[Function]}
+                  type="radio"
+                />
+                <label
+                  className="feature__label"
+                  htmlFor="\\"name\\":\\"Professor-X-AMD-Fire-Breather-with-sidewinder-technology\\"\\"cost\\":1200"
+                >
+                  Professor X AMD Fire Breather with sidewinder technology
+                   (
+                  $1,200.00
+                  )
+                </label>
+              </div>
+            </fieldset>
+          </Component>
+          <Component
+            key="Operating System-1"
+            name="Operating System"
+            options={
+              Array [
+                Object {
+                  "cost": 200,
+                  "name": "Ubuntu Linux 16.04",
+                },
+                Object {
+                  "cost": 300,
+                  "name": "Bodhi Linux",
+                },
+              ]
+            }
+            selected={
+              Object {
+                "Display": Object {
+                  "cost": 1500,
+                  "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+                },
+                "Operating System": Object {
+                  "cost": 300,
+                  "name": "Bodhi Linux",
+                },
+                "Processor": Object {
+                  "cost": 1200,
+                  "name": "Professor X AMD Fire Breather with sidewinder technology",
+                },
+                "Video Card": Object {
+                  "cost": 1345,
+                  "name": "Mind mild breeze 2000",
+                },
+              }
+            }
+            update={[Function]}
+          >
+            <fieldset
+              className="feature"
+            >
+              <legend
+                className="feature__name"
+              >
+                <h3>
+                  Operating System
+                </h3>
+              </legend>
+              <div
+                className="feature__item"
+                key="\\"name\\":\\"Ubuntu-Linux-16.04\\"\\"cost\\":200"
+              >
+                <input
+                  checked={false}
+                  className="feature__option"
+                  id="\\"name\\":\\"Ubuntu-Linux-16.04\\"\\"cost\\":200"
+                  name="Operating-System"
+                  onChange={[Function]}
+                  type="radio"
+                />
+                <label
+                  className="feature__label"
+                  htmlFor="\\"name\\":\\"Ubuntu-Linux-16.04\\"\\"cost\\":200"
+                >
+                  Ubuntu Linux 16.04
+                   (
+                  $200.00
+                  )
+                </label>
+              </div>
+              <div
+                className="feature__item"
+                key="\\"name\\":\\"Bodhi-Linux\\"\\"cost\\":300"
+              >
+                <input
+                  checked={true}
+                  className="feature__option"
+                  id="\\"name\\":\\"Bodhi-Linux\\"\\"cost\\":300"
+                  name="Operating-System"
+                  onChange={[Function]}
+                  type="radio"
+                />
+                <label
+                  className="feature__label"
+                  htmlFor="\\"name\\":\\"Bodhi-Linux\\"\\"cost\\":300"
+                >
+                  Bodhi Linux
+                   (
+                  $300.00
+                  )
+                </label>
+              </div>
+            </fieldset>
+          </Component>
+          <Component
+            key="Video Card-2"
+            name="Video Card"
+            options={
+              Array [
+                Object {
+                  "cost": 1150.98,
+                  "name": "Toyota Corolla 1.5v",
+                },
+                Object {
+                  "cost": 1345,
+                  "name": "Mind mild breeze 2000",
+                },
+              ]
+            }
+            selected={
+              Object {
+                "Display": Object {
+                  "cost": 1500,
+                  "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+                },
+                "Operating System": Object {
+                  "cost": 300,
+                  "name": "Bodhi Linux",
+                },
+                "Processor": Object {
+                  "cost": 1200,
+                  "name": "Professor X AMD Fire Breather with sidewinder technology",
+                },
+                "Video Card": Object {
+                  "cost": 1345,
+                  "name": "Mind mild breeze 2000",
+                },
+              }
+            }
+            update={[Function]}
+          >
+            <fieldset
+              className="feature"
+            >
+              <legend
+                className="feature__name"
+              >
+                <h3>
+                  Video Card
+                </h3>
+              </legend>
+              <div
+                className="feature__item"
+                key="\\"name\\":\\"Toyota-Corolla-1.5v\\"\\"cost\\":1150.98"
+              >
+                <input
+                  checked={false}
+                  className="feature__option"
+                  id="\\"name\\":\\"Toyota-Corolla-1.5v\\"\\"cost\\":1150.98"
+                  name="Video-Card"
+                  onChange={[Function]}
+                  type="radio"
+                />
+                <label
+                  className="feature__label"
+                  htmlFor="\\"name\\":\\"Toyota-Corolla-1.5v\\"\\"cost\\":1150.98"
+                >
+                  Toyota Corolla 1.5v
+                   (
+                  $1,150.98
+                  )
+                </label>
+              </div>
+              <div
+                className="feature__item"
+                key="\\"name\\":\\"Mind-mild-breeze-2000\\"\\"cost\\":1345"
+              >
+                <input
+                  checked={true}
+                  className="feature__option"
+                  id="\\"name\\":\\"Mind-mild-breeze-2000\\"\\"cost\\":1345"
+                  name="Video-Card"
+                  onChange={[Function]}
+                  type="radio"
+                />
+                <label
+                  className="feature__label"
+                  htmlFor="\\"name\\":\\"Mind-mild-breeze-2000\\"\\"cost\\":1345"
+                >
+                  Mind mild breeze 2000
+                   (
+                  $1,345.00
+                  )
+                </label>
+              </div>
+            </fieldset>
+          </Component>
+          <Component
+            key="Display-3"
+            name="Display"
+            options={
+              Array [
+                Object {
+                  "cost": 1500,
+                  "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+                },
+                Object {
+                  "cost": 1400,
+                  "name": "15.3\\" HGTV (3840 x 2160) Home makeover edition",
+                },
+              ]
+            }
+            selected={
+              Object {
+                "Display": Object {
+                  "cost": 1500,
+                  "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+                },
+                "Operating System": Object {
+                  "cost": 300,
+                  "name": "Bodhi Linux",
+                },
+                "Processor": Object {
+                  "cost": 1200,
+                  "name": "Professor X AMD Fire Breather with sidewinder technology",
+                },
+                "Video Card": Object {
+                  "cost": 1345,
+                  "name": "Mind mild breeze 2000",
+                },
+              }
+            }
+            update={[Function]}
+          >
+            <fieldset
+              className="feature"
+            >
+              <legend
+                className="feature__name"
+              >
+                <h3>
+                  Display
+                </h3>
+              </legend>
+              <div
+                className="feature__item"
+                key="\\"name\\":\\"15.6\\"-UHD-(3840-x-2160)-60Hz-Bright-Lights-and-Knobs\\"\\"cost\\":1500"
+              >
+                <input
+                  checked={true}
+                  className="feature__option"
+                  id="\\"name\\":\\"15.6\\"-UHD-(3840-x-2160)-60Hz-Bright-Lights-and-Knobs\\"\\"cost\\":1500"
+                  name="Display"
+                  onChange={[Function]}
+                  type="radio"
+                />
+                <label
+                  className="feature__label"
+                  htmlFor="\\"name\\":\\"15.6\\"-UHD-(3840-x-2160)-60Hz-Bright-Lights-and-Knobs\\"\\"cost\\":1500"
+                >
+                  15.6" UHD (3840 x 2160) 60Hz Bright Lights and Knobs
+                   (
+                  $1,500.00
+                  )
+                </label>
+              </div>
+              <div
+                className="feature__item"
+                key="\\"name\\":\\"15.3\\"-HGTV-(3840-x-2160)-Home-makeover-edition\\"\\"cost\\":1400"
+              >
+                <input
+                  checked={false}
+                  className="feature__option"
+                  id="\\"name\\":\\"15.3\\"-HGTV-(3840-x-2160)-Home-makeover-edition\\"\\"cost\\":1400"
+                  name="Display"
+                  onChange={[Function]}
+                  type="radio"
+                />
+                <label
+                  className="feature__label"
+                  htmlFor="\\"name\\":\\"15.3\\"-HGTV-(3840-x-2160)-Home-makeover-edition\\"\\"cost\\":1400"
+                >
+                  15.3" HGTV (3840 x 2160) Home makeover edition
+                   (
+                  $1,400.00
+                  )
+                </label>
+              </div>
+            </fieldset>
+          </Component>
+        </form>
+      </Customize>
+      <Cart
+        formatCurrency={[Function]}
+        selected={
+          Object {
+            "Display": Object {
+              "cost": 1500,
+              "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+            },
+            "Operating System": Object {
+              "cost": 300,
+              "name": "Bodhi Linux",
+            },
+            "Processor": Object {
+              "cost": 1200,
+              "name": "Professor X AMD Fire Breather with sidewinder technology",
+            },
+            "Video Card": Object {
+              "cost": 1345,
+              "name": "Mind mild breeze 2000",
+            },
+          }
+        }
+      >
+        <section
+          className="main__summary"
+        >
+          <h2>
+            Your cart
+          </h2>
+          <CartItems
+            cost="$1,200.00"
+            feature="Processor"
+            key="Processor-0"
+            name="Professor X AMD Fire Breather with sidewinder technology"
+          >
+            <div
+              className="summary__option"
+            >
+              <div
+                className="summary__option__label"
+              >
+                Processor
+                 
+              </div>
+              <div
+                className="summary__option__value"
+              >
+                Professor X AMD Fire Breather with sidewinder technology
+              </div>
+              <div
+                className="summary__option__cost"
+              >
+                $1,200.00
+              </div>
+            </div>
+          </CartItems>
+          <CartItems
+            cost="$300.00"
+            feature="Operating System"
+            key="Operating System-1"
+            name="Bodhi Linux"
+          >
+            <div
+              className="summary__option"
+            >
+              <div
+                className="summary__option__label"
+              >
+                Operating System
+                 
+              </div>
+              <div
+                className="summary__option__value"
+              >
+                Bodhi Linux
+              </div>
+              <div
+                className="summary__option__cost"
+              >
+                $300.00
+              </div>
+            </div>
+          </CartItems>
+          <CartItems
+            cost="$1,345.00"
+            feature="Video Card"
+            key="Video Card-2"
+            name="Mind mild breeze 2000"
+          >
+            <div
+              className="summary__option"
+            >
+              <div
+                className="summary__option__label"
+              >
+                Video Card
+                 
+              </div>
+              <div
+                className="summary__option__value"
+              >
+                Mind mild breeze 2000
+              </div>
+              <div
+                className="summary__option__cost"
+              >
+                $1,345.00
+              </div>
+            </div>
+          </CartItems>
+          <CartItems
+            cost="$1,500.00"
+            feature="Display"
+            key="Display-3"
+            name="15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs"
+          >
+            <div
+              className="summary__option"
+            >
+              <div
+                className="summary__option__label"
+              >
+                Display
+                 
+              </div>
+              <div
+                className="summary__option__value"
+              >
+                15.6" UHD (3840 x 2160) 60Hz Bright Lights and Knobs
+              </div>
+              <div
+                className="summary__option__cost"
+              >
+                $1,500.00
+              </div>
+            </div>
+          </CartItems>
+          <CartTotal
+            total="$4,345.00"
+          >
+            <div
+              className="summary__total"
+            >
+              <div
+                className="summary__total__label"
+              >
+                Total
+              </div>
+              <div
+                className="summary__total__value"
+              >
+                $4,345.00
+              </div>
+            </div>
+          </CartTotal>
+        </section>
+      </Cart>
+    </main>
+  </div>
+</App>
+`;

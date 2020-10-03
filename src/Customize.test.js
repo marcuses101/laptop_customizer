@@ -1,8 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import { mount, render } from "enzyme";
-import toJson from "enzyme-to-json";
 import "@testing-library/jest-dom"
 import Customize from "./Customize"
 import FEATURES from "./FEATURES"

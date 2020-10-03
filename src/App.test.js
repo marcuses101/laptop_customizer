@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { mount, render } from "enzyme";
+import { render } from "enzyme";
 import toJson from "enzyme-to-json";
 
 const FEATURES = {
@@ -56,12 +56,5 @@ describe("laptop-customizer", () => {
   it("matches original snapshot", () => {
     const wrapper = render(<App features={FEATURES} />);
     expect(toJson(wrapper)).toMatchSnapshot();
-  });
-  it("updates cart when new components are selected", () => {
-    const wrapper = mount(<App features={FEATURES} />);
-    wrapper.find("fieldset").at(0).find("input").at(1).simulate("change")
-    wrapper.find("fieldset").at(1).find("input").at(1).simulate("change")
-    wrapper.find("fieldset").at(2).find("input").at(1).simulate("change")
-    expect(wrapper).toMatchSnapshot();
   });
 });

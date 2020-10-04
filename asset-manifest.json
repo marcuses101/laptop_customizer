@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/laptop_customizer/static/css/main.42a420bb.chunk.css",
+    "main.js": "/laptop_customizer/static/js/main.c2cfded9.chunk.js",
+    "main.js.map": "/laptop_customizer/static/js/main.c2cfded9.chunk.js.map",
+    "runtime-main.js": "/laptop_customizer/static/js/runtime-main.cff6aa8b.js",
+    "runtime-main.js.map": "/laptop_customizer/static/js/runtime-main.cff6aa8b.js.map",
+    "static/js/2.36def64e.chunk.js": "/laptop_customizer/static/js/2.36def64e.chunk.js",
+    "static/js/2.36def64e.chunk.js.map": "/laptop_customizer/static/js/2.36def64e.chunk.js.map",
+    "index.html": "/laptop_customizer/index.html",
+    "precache-manifest.ce329686e7d5fedeca6acf0346a7488e.js": "/laptop_customizer/precache-manifest.ce329686e7d5fedeca6acf0346a7488e.js",
+    "service-worker.js": "/laptop_customizer/service-worker.js",
+    "static/css/main.42a420bb.chunk.css.map": "/laptop_customizer/static/css/main.42a420bb.chunk.css.map",
+    "static/js/2.36def64e.chunk.js.LICENSE.txt": "/laptop_customizer/static/js/2.36def64e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cff6aa8b.js",
+    "static/js/2.36def64e.chunk.js",
+    "static/css/main.42a420bb.chunk.css",
+    "static/js/main.c2cfded9.chunk.js"
+  ]
+}

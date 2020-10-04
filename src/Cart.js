@@ -3,24 +3,29 @@ import CartItems from "./CartItems";
 import CartTotal from "./CartTotal";
 
 export default function Cart(props) {
-  const { formatCurrency, selected } = props;
+  const { selected } = props;
 
-  const summary = Object.keys(selected).map((feature, idx) => {
+  const formatCurrency = (amount) =>
+  new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(amount);
+
+  const summary = Object.entries(selected).map(([feature,{name,cost}], idx) => {
     const featureHash = feature + "-" + idx;
-    const selectedOption = selected[feature];
 
     return (
       <CartItems
         key={featureHash}
         feature={feature}
-        name={selectedOption.name}
-        cost={formatCurrency(selectedOption.cost)}
+        name={name}
+        cost={formatCurrency(cost)}
       />
     );
   });
 
-  const total = Object.keys(selected).reduce(
-    (acc, curr) => acc + selected[curr].cost,
+  const total = Object.values(selected).reduce(
+    (acc, {cost}) => acc + cost,
     0
   );
 

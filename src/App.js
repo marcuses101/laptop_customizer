@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 
-// Normalizes string as a slug - a string that is safe to use
-// in both URLs and html attributes
-
 import "./App.css";
 import Cart from "./Cart";
 import Customize from "./Customize";
@@ -37,12 +34,6 @@ class App extends Component {
     });
   };
 
-  formatCurrency = (amount) =>
-    new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "USD",
-    }).format(amount);
-
   render() {
 
     return (
@@ -57,7 +48,6 @@ class App extends Component {
             update={this.updateFeature}
           />
           <Cart
-            formatCurrency={this.formatCurrency}
             selected={this.state.selected}
           />
         </main>
